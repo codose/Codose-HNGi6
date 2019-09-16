@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HNG_App</string>
+    <string name="codose">codose</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="title_activity_login">SIGN IN</string>
+    <string name="action_sign_in">SIGN IN</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_email">E-Mail</string>
+    <string name="title_activity_sign_in">SIGN IN</string>
+    <string name="password">Password</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="full_name">Full Name</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_display_info">DisplayInfo</string>
+    <string name="username">UserName*</string>
+    <string name="welcome">Welcome</string>
+    <string name="textview">TextView</string>
+    <string name="userN">Username :</string>
+    <string name="fullname">Full Name :</string>
+    <string name="email">EMail :</string>
+</resources>
