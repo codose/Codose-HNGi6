@@ -167,29 +167,7 @@
         android:textSize="@dimen/size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uState" />
-    <TextView
-        android:id="@+id/mGender"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/textview"
-        android:textColor="@color/primary"
-        android:textSize="@dimen/size"
-        app:layout_constraintStart_toStartOf="@+id/mCountry"
-        app:layout_constraintTop_toBottomOf="@+id/uCountry" />
 
-    <TextView
-        android:id="@+id/uGender"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/gender"
-        android:textColor="@color/primary"
-        android:textSize="@dimen/size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uCountry" />
 
     <View
         android:id="@+id/divider"

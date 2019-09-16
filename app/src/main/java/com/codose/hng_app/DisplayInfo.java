@@ -38,7 +38,7 @@ public class DisplayInfo extends AppCompatActivity {
         TextView uDOB = findViewById(R.id.mDOB);
         TextView uState = findViewById(R.id.mState);
         TextView uCountry = findViewById(R.id.mCountry);
-        TextView uGender = findViewById(R.id.mGender);
+
         uName = SharedPreferences.getString("uName", "");
         user.setText(uName);
         fullName = SharedPreferences.getString("Name", "");
@@ -51,8 +51,6 @@ public class DisplayInfo extends AppCompatActivity {
         uState.setText(state);
         country = SharedPreferences.getString("Country", "");
         uCountry.setText(country);
-        gender = SharedPreferences.getString("Gender", "");
-        uGender.setText(gender);
     }
 
 }

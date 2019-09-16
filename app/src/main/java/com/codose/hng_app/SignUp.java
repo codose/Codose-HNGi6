@@ -23,10 +23,7 @@ public class SignUp extends AppCompatActivity {
     Editor editor;
     Button btnSignUp;
     EditText name, username, email, password, dob, state, country;
-    RadioGroup gender;
     SharedPreferences sharedPreferences;
-    UserSession session;
-    private RadioButton sGender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +40,6 @@ public class SignUp extends AppCompatActivity {
         dob = findViewById(R.id.dob);
         state = findViewById(R.id.state);
         country = findViewById(R.id.country);
-        gender = findViewById(R.id.gender);
-        int selectedID = gender.getCheckedRadioButtonId();
-        sGender = findViewById(selectedID);
 
         TextView signUp = findViewById(R.id.acctSign);
         signUp.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +67,6 @@ public class SignUp extends AppCompatActivity {
                 String mDob = dob.getText().toString();
                 String mState = state.getText().toString();
                 String mCountry = country.getText().toString();
-                String mGender = sGender.getText().toString();
 
                 if(username.getText().length()<=0){
                     Toast.makeText(SignUp.this, "Enter Username", Toast.LENGTH_SHORT).show();
@@ -106,7 +99,6 @@ public class SignUp extends AppCompatActivity {
                     editor.putString("DOB",mDob);
                     editor.putString("State",mState);
                     editor.putString("Country",mCountry);
-                    editor.putString("Gender", mGender);
 
                     editor.apply();
                     openSignIn();
