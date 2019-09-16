@@ -21,19 +21,19 @@ public class UserSession {
 
 // Shared preferences file name
 
-    public static final String PREFER_NAME = "Reg";
+    public static final String PREFER_NAME = "SignIn";
 
     // All Shared Preferences Keys
     public static final String IS_USER_LOGIN = "IsUserLoggedIn";
 
     // User name (make variable public to access from outside)
-    public static final String KEY_NAME = "Name";
+    public static final String KEY_NAME = "uName";
 
     // Email address (make variable public to access from outside)
     public static final String KEY_EMAIL = "Email";
 
     // password
-    public static final String KEY_PASSWORD = "txtPassword";
+    public static final String KEY_PASSWORD = "Password";
 
     // Constructor
     public UserSession(Context context){

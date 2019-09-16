@@ -14,12 +14,14 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SignIn extends AppCompatActivity {
     public static android.content.SharedPreferences SharedPreferences = null;
     private static final String PREFER_NAME = "SignUp";
     private Button btnSignIn;
+    TextView signIn;
     UserSession session;
 
 
@@ -33,14 +35,19 @@ public class SignIn extends AppCompatActivity {
 
         final EditText username = findViewById(R.id.username);
         final EditText password = findViewById(R.id.password);
+        signIn = findViewById(R.id.acctSign2);
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignIn.this,SignUp.class);
+                startActivity(intent);
+            }
+        });
 
 
         // User Session Manager
         session = new UserSession(getApplicationContext());
 
-        Toast.makeText(getApplicationContext(),
-                "User Login Status: " + session.isUserLoggedIn(),
-                Toast.LENGTH_LONG).show();
         // User Login button
         btnSignIn = findViewById(R.id.login);
 
